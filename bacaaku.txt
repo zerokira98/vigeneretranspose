@@ -1,9 +1,15 @@
+v0.12
+-menu metode dihapus
+-file program ada di program.js
+-gk pake transposisi.js, fungsi vigenere pindah ke program.js
+-program manipulasi DOM pindah ke view.js
+--------------
+v0.1
 *pakai kotak transpose
 -program ada di js/js.js
 -key1 berupa susunan huruf/sebuah kata()
 -key2 jumlah sisi(panjang array)
 -hasil enkripsi termasuk semua spasi yg di-generate
--fungsi vigenereEnChiper() dan vigeneredeChiper() ada di js/transposisi.js
 enkripsi yg dipakai :
 -vigenere chiper angka(ppt page 31)
 -transposisi diagonal(ppt page 40)
