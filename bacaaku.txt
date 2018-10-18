@@ -1,3 +1,6 @@
+v0.13
+-bug fix
+---------------
 v0.12
 -menu metode dihapus
 -file program ada di program.js

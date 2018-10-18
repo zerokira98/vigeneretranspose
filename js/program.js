@@ -19,8 +19,10 @@ var arr2d = new Array(key2);
       arr2d[i][s] = " ";
     }
   }
+  console.log(nplain);
 //call vignere function
 nplain = vigenereEnChiper(nplain,key1);
+console.log(nplain);
 //insert to 2Darray, kiri atas -> kanan atas ->bawah
   for (var i = 0; i < nplain.length; i++) {
     arr2d[count][i%(key2)] = nplain[i];
@@ -65,6 +67,7 @@ var arr2d = new Array(key2);
       count++;
     }
   }
+  console.log(arr2d);
 //membuat array1D utk digunakan di fungsi vigeneredeChiper()
 var arraydechiper = new Array(key2*key2);
 count=0;
@@ -75,7 +78,9 @@ count=0;
       count++;
     }
   }
+  console.log(arraydechiper);
   arraydechiper = vigeneredeChiper(arraydechiper,key1);
+  console.log(arraydechiper);
     for (var i = 0; i < arraydechiper.length; i++) {
       decoded += arraydechiper[i];
     }
@@ -89,7 +94,7 @@ function vigenereEnChiper(array,key) { //array1D
   var newalfa = alfabet.split("");
   var alfanum = 0;
     for (var i = 0; i < key.length; i++) {
-      for (var j = 0; j < newalfa.length-10; j++) {
+      for (var j = 61; j >= 0; j--) {
         //merubah huruf ->angka
         if (key[i]==newalfa[j]) {
           key[i]=j;
@@ -114,7 +119,7 @@ function vigeneredeChiper(array,key) {
   var newalfa = alfabet.split("");
   var alfanum = 0;
     for (var i = 0; i < key.length; i++) {
-      for (var j = 0; j < newalfa.length-10; j++) {
+      for (var j = 61; j >= 0; j--) {
         //merubah huruf->angka
         if (key[i]==newalfa[j]) {
           key[i]=j;
